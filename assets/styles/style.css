@@ -1,0 +1,56 @@
+@import './reset.css';
+@import './fonts.css';
+@import './components/navbar.css';
+@import './components/main.css';
+
+:root {
+    --whiteColor: #fff;
+    --blackColor: #000;
+    --orangeColor: #F18128;
+    --primaryColor: #040D1F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    background: var(--primaryColor);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+
+.section-title {
+    color: rgb(241, 129, 40);
+    font-family: 'Comfortaa';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    border-bottom: 2px solid var(--orangeColor);
+    padding-bottom: 10px;
+    max-width: max-content;
+}
+
